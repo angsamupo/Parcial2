@@ -1,0 +1,14 @@
+ROTACION_IZQUIERDA(T, x):
+    y = x.derecho
+    x.derecho = y.izquierdo
+    if y.izquierdo != T.nil:
+        y.izquierdo.padre = x
+    y.padre = x.padre
+    if x.padre == T.nil:
+        T.raiz = y
+    elif x == x.padre.izquierdo:
+        x.padre.izquierdo = y
+    else:
+        x.padre.derecho = y
+    y.izquierdo = x
+    x.padre = y
