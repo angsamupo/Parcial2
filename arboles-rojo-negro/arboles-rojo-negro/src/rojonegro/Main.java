@@ -1,12 +1,5 @@
 package rojonegro;
 
-/**
- * Demostración del árbol rojo-negro:
- *  1. Inserciones paso a paso (con recoloreos y rotaciones).
- *  2. Búsqueda y camino recorrido.
- *  3. Altura negra y validación de propiedades.
- *  4. Comparación de alturas con inserciones ordenadas.
- */
 public class Main {
 
     public static void main(String[] args) {
@@ -65,7 +58,6 @@ public class Main {
             for (int i = 1; i <= n; i++) {
                 tree.insert(i);
             }
-            // En un ABB sin balanceo, insertar 1..n en orden produce una cadena de altura n-1
             System.out.println(n + "\t" + tree.height() + "\t\t\t" + (n - 1) + "\t\t\t" + tree.isValid());
         }
     }
