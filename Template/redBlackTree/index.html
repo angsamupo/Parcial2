@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Árbol Rojo-Negro</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <h1>Árboles Rojo-Negro</h1>
+    <p>Simulador de inserción y balanceo</p>
+
+    <div class="controles">
+        <input type="number" id="valor" placeholder="Ingresa un número">
+
+        <button onclick="insertar()">Insertar nodo</button>
+        <button onclick="reiniciar()">Reiniciar</button>
+    </div>
+
+    <div id="mensaje">
+        Ingresa un número para comenzar.
+    </div>
+
+    <div class="arbol">
+        <svg id="lienzo" width="100%" height="500">
+        </svg>
+    </div>
+
+    <h2>Procedimiento</h2>
+    <div id="pasos"></div>
+
+    <script src="arbol.js"></script>
+
+</body>
+</html>
